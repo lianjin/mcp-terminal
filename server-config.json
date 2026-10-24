@@ -1,0 +1,9 @@
+{
+  "allowed_cwd_roots": ["."],
+  "allowed_env_keys": [],
+  "audit_log_path": "logs/sessions.jsonl",
+  "audit_max_bytes": 10485760,
+  "audit_backup_count": 3,
+  "audit_queue_size": 2048,
+  "audit_timeout": 2
+}

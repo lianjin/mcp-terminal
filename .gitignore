@@ -1,0 +1,46 @@
+# 根目录默认不入库，只允许可复现运行需要的项目文件。
+/*
+!/.gitignore
+!/README.md
+!/pyproject.toml
+!/uv.lock
+!/server-config.json
+!/src/
+!/tests/
+!/outputs/
+
+# outputs 只保留 README 和测试依赖的两个客户端脚本。
+/outputs/*
+!/outputs/stage2/
+/outputs/stage2/*
+!/outputs/stage2/repl_client.py
+!/outputs/validation/
+/outputs/validation/*
+!/outputs/validation/run_verification.py
+
+# Python 环境、构建、测试与编辑器缓存。
+.venv/
+.work/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+.DS_Store
+
+# 含机器路径、环境值或实际身份信息的文件不入库。
+mcp.json
+mcp-client.json
+.env
+.env.*
+*.log
+*.jsonl
+*.jsonl.*
+*.pem
+*.key
+logs/
